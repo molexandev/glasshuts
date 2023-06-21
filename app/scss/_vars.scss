@@ -1,5 +1,6 @@
 $default: #5B6460;
 $accent: #E9ECE0;
+$hover: #EB932E;
 
 %DIN-light-300 {
    font-family: 'din_light', sans-serif;
@@ -57,19 +58,20 @@ $accent: #E9ECE0;
 }
 
 
-// %btn {
-//    @extend %cardo-400;
-//    background-color: $accent;
-//    font-size: 19px;
-//    line-height: 28px;
-//    letter-spacing: 0.57px;
-//    text-transform: capitalize;
-//    color: $default;
-//    border: none;
-//    cursor: pointer;
-//    transition: all .2s;
-//    &:hover {
-//       color: $accent;
-//       background-color: $hover;
-//    }
-// }
+%btn {
+   @extend %DIN-light-300;
+   background-color: $default;
+   font-size: 14px;
+   line-height: 28px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   transition: all .2s;
+   padding: 0;
+   &:hover {
+      color: $default;
+      background-color: $accent;
+   }
+}
