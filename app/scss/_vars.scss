@@ -1,0 +1,75 @@
+$default: #5B6460;
+$accent: #E9ECE0;
+
+%DIN-light-300 {
+   font-family: 'din_light', sans-serif;
+   font-weight: 300;
+}
+
+%OpenSans-Light-300 {
+   font-family: 'OpenSans-Light', sans-serif;
+   font-weight: 300;
+}
+
+%OpenSans-SemiBold-600 {
+   font-family: 'Mulish-Regular', sans-serif;
+   font-weight: 600;
+}
+
+%OpenSans-Italic-400 {
+   font-family: 'OpenSans-Italic', sans-serif;
+   font-weight: 400;
+}
+
+%DIN-medium-500 {
+   font-family: 'din_medium', sans-serif;
+   font-weight: 500;
+}
+
+%OpenSans-LightItalic-300 {
+   font-family: 'OpenSans-LightItalic', sans-serif;
+   font-weight: 300;
+}
+
+%Lato-Regular-400 {
+   font-family: 'Lato-Regular', sans-serif;
+   font-weight: 400;
+}
+
+%Handlee-Regular-400 {
+   font-family: 'Handlee-Regular', sans-serif;
+   font-weight: 400;
+}
+
+%OpenSans-Bold-700 {
+   font-family: 'OpenSans-Bold', sans-serif;
+   font-weight: 700;
+}
+
+%Mulish-Regular-400 {
+   font-family: 'Mulish-Regular', sans-serif;
+   font-weight: 400;
+}
+
+%OpenSans-Regular-400 {
+   font-family: 'Mulish-Regular', sans-serif;
+   font-weight: 400;
+}
+
+
+// %btn {
+//    @extend %cardo-400;
+//    background-color: $accent;
+//    font-size: 19px;
+//    line-height: 28px;
+//    letter-spacing: 0.57px;
+//    text-transform: capitalize;
+//    color: $default;
+//    border: none;
+//    cursor: pointer;
+//    transition: all .2s;
+//    &:hover {
+//       color: $accent;
+//       background-color: $hover;
+//    }
+// }
