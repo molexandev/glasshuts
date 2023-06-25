@@ -65,6 +65,456 @@
 }
 
 
+//   =======   SLIDER   =======
+.top-slider {
+	&__inner {
+      margin-bottom: 113px;
+	}
+	&__item {
+      position: relative;
+      &::after{
+         content: '';
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         background: rgba(0,0,0,.23);
+         z-index: 1;
+      }
+	}
+	&__img {
+      z-index: 0;
+	}
+	&__title {
+      color: #FFF;
+      text-align: right;
+      font-size: 70px;
+      @extend %OpenSans-Light-300;
+      line-height: 72px;
+      margin-bottom: 34px;
+      position: absolute;
+      top: 95px;
+      right: 58px;
+      z-index: 2;
+	}
+	&__text {
+      color: #FFF;
+      text-align: center;
+      font-size: 20px;
+      @extend %Mulish-Regular-400;
+      line-height: 28px;
+      position: absolute;
+      top: 201px;
+      right: 142px;
+      max-width: 333px;
+      z-index: 2;
+	}
+	&__btn {
+      width: 263px;
+      height: 100px;
+      @extend %btn;
+      position: absolute;
+      top: 637px;
+      left: 146px;
+      z-index: 2;
+	}
+	&__price {
+      position: absolute;
+      top: 637px;
+      left: 409px;
+      width: 120px;
+      height: 100px;
+      background-color: $accent;
+      z-index: 2;
+      @extend %DIN-light-300;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+	}
+	&__price-tag {
+      font-size: 12px;
+      line-height: 18px;
+	}
+   &__price-num{
+      font-size: 20px;
+      line-height: 28px;
+   }
+
+}
+.slick-arrow{
+   position: absolute;
+   bottom: 85px;
+   z-index: 2;
+   background-color: transparent;
+   border: none;
+   width: 35px;
+   height: 17px;
+   cursor: pointer;
+   font-size: 0;
+}
+.slick-prev{
+   left: 645px;
+   background-image: url(../images/arrow-slide-left.svg);
+}
+.slick-next{
+   right: 650px;
+   background-image: url(../images/arrow-slide-right.svg);
+}
+.slick-dots{
+   position: absolute;
+   z-index: 2;
+   left: 41px;
+   top: 65px;
+   bottom: 95px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   li{
+      button{
+         width: 2px;
+         height: 60px!important;
+         padding: 0;
+         border: none;
+         font-size: 0;
+         cursor: pointer;
+         background-color: #B7BCBF;
+      }
+      &.slick-active{
+         button{
+            background-color: #fff;
+         }
+      }
+   }
+}
+.slick-list{
+   padding-bottom: 33px;
+}
+
+
+//   =======   CABINS   =======
+.cabins {
+   &__inner {
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      column-gap: 105px;
+      margin-bottom: 150px;
+   }
+   &__info {
+      max-width: 465px;
+   }
+   &__title {
+      @extend %title;
+      margin-bottom: 50px;
+   }
+   &__text {
+      @extend %OpenSans-Light-300;
+      color: #000;
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 20px;
+   }
+   &__link {
+      @extend %OpenSans-SemiBold-600;
+      font-size: 16px;
+      line-height: 30px;
+      color: $default;
+      padding-bottom: 5px;
+      transition: all .2s;
+      border-bottom: 2px solid $default;
+      &:hover{
+         color: $hover;
+         border-bottom: 2px solid $hover;
+      }
+   }
+   &__img {
+      width: 693px;
+      height: 439px;
+      object-fit: contain;
+   }
+}
+
+
+//   =======   VIDEO   =======
+.video {
+   &__inner {
+      padding: 0 30px;
+      margin-bottom: 150px;
+      display: flex;
+      justify-content: space-between;
+   }
+   &__item {
+      width: 432px;
+      height: 397px;
+      position: relative;
+   }
+}
+
+//   =======   MAP  =======
+.map {
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: -2px;
+   }
+   &__info {
+      background-color: $accent;
+      padding-left: 110px;
+      padding-top: 150px;
+      min-height: 650px;
+      min-width: 705px;
+   }
+   &__title {
+      @extend %title;
+      @extend %Mulish-Regular-400;
+      margin-bottom: 50px;
+   }
+   &__text {
+      @extend %OpenSans-Light-300;
+      font-size: 16px;
+      line-height: 30px;
+      color: #333;
+      margin-bottom: 30px;
+      max-width: 465px;
+   }
+   &__link {
+      @extend %OpenSans-Italic-400;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #5B6460;
+      color: #5B6460;
+      font-size: 16px;
+      line-height: 30px;
+      transition: all .2s;
+      &:hover{
+         color: $hover;
+         border-bottom: 2px solid $hover;
+      }
+   }
+}
+
+//   ======= FACILITIES
+.facilities {
+   &__inner {
+      background-color: $default;
+      padding: 150px 0;
+   }
+   &__title {
+      color: #fff;
+      font-size: 40px;
+      line-height: 48px;
+      @extend %OpenSans-Light-300;
+      text-align: center;
+      margin-bottom: 100px;
+   }
+   &__items {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      justify-items: center;
+      row-gap: 83px;
+      max-width: 830px;
+      margin: 0 auto;
+   }
+   &__subtitle {
+      color: #FFF;
+      text-align: center;
+      font-size: 18px;
+      @extend %OpenSans-Regular-400;
+      line-height: 28px;
+   }
+   &__img-box{
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 20px;
+   }
+   &__svg {
+      margin: 0 auto;
+      width: 70px;
+      height: 70px;
+   }
+}
+
+//   =======   MORE ABOUT   =======
+.more-about {
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      margin-bottom: 150px;
+   }
+   &__img {
+      width: 705px;
+      height: 559px;
+      object-fit: cover;
+   }
+   &__link {
+      position: absolute;
+      top: 205px;
+      left: 625px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 157px;
+      height: 157px;
+      text-align: center;
+      font-size: 16px;
+      @extend %DIN-light-300;
+      line-height: 22px;
+      border-radius: 50%;
+      background-color: $accent;
+      color: #333;
+      transition: all .2s;
+      &:hover{
+         background-color: $hover;
+         color: $accent;
+      }
+   }
+}
+
+//   =======   CONTACTS   =======
+.contacts {
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      margin-bottom: 150px;
+   }
+   &__info {
+      padding-left: 146px;
+   }
+   &__title {
+      color: $default;
+      font-size: 40px;
+      @extend %OpenSans-Regular-400;
+      line-height: 60px;
+      margin-bottom: 50px;
+   }
+   &__address {
+      @extend %OpenSans-Light-300;
+      color: #000;
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 20px;
+   }
+   &__link {
+      display: block;
+      @extend %OpenSans-Light-300;
+      color: #000;
+      font-size: 16px;
+      line-height: 30px;
+      &:hover{
+         color: $hover;
+      }
+   }
+   &__sicials {
+      display: flex;
+      justify-content: start;
+      column-gap: 43px;
+      margin-top: 50px;
+   }
+   &__sicials-link{
+      width: 50px;
+      height: 50px;
+      background-repeat: 50%;
+   }
+   &__svg {
+      width: 50px;
+      height: 50px;
+   }
+   &__img {
+      width: 386px;
+      height: 188px;
+   }
+   &__btn {
+      width: 266px;
+      height: 100px;
+      background-color: $default;
+      color: #fff;
+      text-align: center;
+      font-size: 18px;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      line-height: 28px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all .2s;
+      &:hover{
+         background-color: $accent;
+         color: $default;
+      }
+   }
+   &__order{
+      display: flex;
+      justify-content: space-between;
+      @extend %DIN-light-300;
+   }
+   &__price {
+      background-color: $accent;
+      color: #333;
+      width: 120px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      padding-left: 28px;
+   }
+   &__price-tag {
+      display: block;
+      font-size: 12px;
+      line-height: 18px;
+   }
+   &__price-num {
+      display: block;
+      font-size: 20px;
+      line-height: 28px;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //   =======   FOOTER   =======

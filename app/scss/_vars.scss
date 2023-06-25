@@ -57,6 +57,11 @@ $hover: #EB932E;
    font-weight: 400;
 }
 
+%title {
+   font-size: 40px;
+   line-height: 40px;
+   color: $default
+}
 
 %btn {
    @extend %DIN-light-300;
