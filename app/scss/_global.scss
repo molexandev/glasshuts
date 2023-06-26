@@ -2,7 +2,7 @@ body {
    height: 100vh;
    background-color: #fff;
    @extend %OpenSans-Regular-400 ;
-   color: #000;
+   color: $default;
 }
 .wrapper{
    min-height: 100%;
