@@ -493,6 +493,10 @@
       height: 350px;
       position: relative;
       margin-bottom: 150px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: column;
       &::after{
          content: '';
          position: absolute;
@@ -508,20 +512,60 @@
    &__img {
       width: 1410px;
       height: 350px;
-      position: relative;
+      position: absolute;
       object-fit: contain;
       z-index: 1;
    }
    &__title {
       @extend %OpenSans-Light-300;
+      margin-bottom: 15px;
+      padding-top: 67px;
       color: #FFF;
       text-align: center;
       font-size: 70px;
       line-height: 72px;
-      position: absolute;
       z-index: 3;
-      top: 67px;
-      left: 41%;
+   }
+   &__link {
+      @extend %OpenSans-Light-300;
+      margin-bottom: 50px;
+      z-index: 3;
+      color: #FFF;
+      font-size: 18px;
+      line-height: 24px;
+      text-decoration-line: underline;
+      transition: all .2s;
+      &:hover{
+         color: $hover;
+      }
+   }
+   &__svg {
+      width: 10px;
+      height: 15px;
+      margin-right: 7px;
+   }
+   &__btn {
+      // position: absolute;
+      // top: 228px;
+      // left: 45%;
+      z-index: 3;
+      @extend %DIN-light-300;
+      color: #FFF;
+      text-align: center;
+      font-size: 14px;
+      line-height: 28px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      background-color: transparent;
+      border: 1px solid #fff;
+      padding: 14px 30px;
+      cursor: pointer;
+      transition: all .2s;
+      &:hover{
+         background-color: $hover;
+         color: $accent;
+         border: 1px solid $hover;
+      }
    }
 }
 .slider-page {
@@ -666,85 +710,6 @@
 }
 
 //   =======   AREA   =======
-.area-top {
-   &__inner {
-      @extend %OpenSans-Light-300;
-      width: 100%;
-      height: 350px;
-      position: relative;
-      margin-bottom: 150px;
-      &::after{
-         content: '';
-         position: absolute;
-         top: 0;
-         right: 0;
-         bottom: 0;
-         left: 0;
-         background-color: #333;
-         opacity: 0.5;
-         z-index: 2;
-      }
-   }
-   &__img {
-      width: 1410px;
-      height: 350px;
-      position: relative;
-      object-fit: contain;
-      z-index: 1;
-   }
-   &__title {
-      color: #FFF;
-      text-align: center;
-      font-size: 70px;
-      line-height: 72px;
-      position: absolute;
-      z-index: 3;
-      top: 67px;
-      left: 41%;
-   }
-   &__link {
-      @extend %OpenSans-Light-300;
-      position: absolute;
-      z-index: 3;
-      top: 154px;
-      left: 45%;
-      color: #FFF;
-      font-size: 18px;
-      line-height: 24px;
-      text-decoration-line: underline;
-      transition: all .2s;
-      &:hover{
-         color: $hover;
-      }
-   }
-   &__mapmark-svg {
-      width: 10px;
-      height: 15px;
-   }
-   &__btn {
-      position: absolute;
-      top: 228px;
-      left: 45%;
-      z-index: 3;
-      @extend %DIN-light-300;
-      color: #FFF;
-      text-align: center;
-      font-size: 14px;
-      line-height: 28px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      background-color: transparent;
-      border: 1px solid #fff;
-      padding: 14px 30px;
-      cursor: pointer;
-      transition: all .2s;
-      &:hover{
-         background-color: $hover;
-         color: $accent;
-         border: 1px solid $hover;
-      }
-   }
-}
 .area-map {
    &__inner {
       display: flex;
@@ -766,6 +731,207 @@
 .map-bottom{
    margin-bottom: -3px;
 }
+
+//   =======   BOOKING   =======
+.choose-services {
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 32px 0 146px;
+   }
+   &__choice {
+      max-width: 660px;
+   }
+   &__title {
+      font-size: 24px;
+      line-height: 24px;
+      padding-bottom: 25px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid $default;
+      width: 100%;
+   }
+   &__form {
+      width: 660px;
+   }
+   &__label {
+      margin-bottom: 24px;
+      display: block;
+      width: 660px;
+      height: 70px;
+   }
+   &__box {
+      position: relative;
+   }
+   &__input {
+      height: 1px;
+      width: 1px;
+      position: absolute;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      &:checked + .choose-services__circle{   
+         svg.choose-services__svg-checked{
+            display: block;      
+            width: 34px;
+            height: 34px;
+            z-index: 2;
+         }
+         svg.choose-services__svg{
+            display: none;            
+         }
+      }
+   }
+   &__svg{
+      display: block;
+   }
+   &__svg-checked{
+      display: none;
+   }
+   &__circle{
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      left: 24px;
+      top: 18px;
+   }
+   &__radio {
+      padding-left: 78px;
+      padding-right: 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 660px;
+      height: 70px;
+      background-color: $accent;
+      z-index: 1;
+   }
+   &__text-box {
+   }
+   &__text-title {
+   }
+   &__text-info {
+   }
+   &__box-right {
+   }
+   &__text-rght {
+   }
+   &__info {
+   }
+}
+.services-aside {
+   &__price {
+   }
+   &__price-num {
+   }
+   &__price-deskr {
+   }
+   &__form {
+   }
+   &__label {
+   }
+   &__name {
+   }
+   &__btn {
+   }
+   &__resume {
+   }
+   &__names {
+   }
+   &__item {
+   }
+   &__quanriry {
+   }
+   &__total {
+   }
+   &__total-title {
+   }
+   &__total-num {
+   }
+   &__form-bottom {
+   }
+   &__label-bottom {
+   }
+   &__input-bottom {
+   }
+   &__btn-bottom {
+   }
+}
+
+.form-open {
+   margin-bottom: 50px;
+   &__form {
+      max-width: 420px;
+   }
+   &__label {
+      width: 455px;
+      height: 50px;
+      margin-bottom: 20px;
+   }
+   &__box {
+      position: relative;
+   }
+   &__input {
+      height: 1px;
+      width: 1px;
+      position: absolute;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      &:checked + .form-open__circle{   
+         svg.form-open__svg-checked{
+            display: block;      
+            width: 34px;
+            height: 34px;
+            z-index: 2;
+         }
+         svg.form-open__svg{
+            display: none;
+            width: 34px;
+            height: 34px;        
+         }
+      }
+   }
+   &__circle {
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      left: 24px;
+      top: 18px;
+   }
+   &__svg-checked {
+      display: none;
+   }
+   &__svg {
+      display: block;
+   }
+   &__radio {
+      padding-left: 78px;
+      padding-right: 64px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: start;
+      width: 660px;
+      height: 70px;
+      background-color: #fff;
+      z-index: 1;
+   }
+   &__text-title {
+   }
+   &__text-info {
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
