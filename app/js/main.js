@@ -23,14 +23,31 @@ $(function () {
         draggable: true,
     });
 
-    // // BOOKING SLIDE
+    // BOOKING SLIDE
 
-    // $(".choose-services__label").on("click", function () {
-    //   $(".choose-services__input").toggleClass("choose-services__input--active");
-    //   $(this).next().slideToggle();
+    $("#choose-services__inp1").on("click", function () {
+      $('.form-open__inp1').slideToggle();
+      $('.choose-services__arrow-open').toggleClass("choose-services__arrow-open--active");
+      $('.choose-services__arrow-close').toggleClass("choose-services__arrow-close--active");
+    });
+
+    $("#choose-services__inp2").on("click", function () {
+      $('.form-open__inp2').slideToggle();
+      $('.choose-services__arrow-open2').toggleClass("choose-services__arrow-open--active2");
+      $('.choose-services__arrow-close2').toggleClass("choose-services__arrow-close--active2");
+    });
+
+    // $("#choose-services__inp1, #choose-services__inp2").on("click", function () {
+    //   $('.choose-services__arrow-open').toggleClass("choose-services__arrow-open--active");
     // });
 
-    $('input ').styler();
+
+    // FORM styller
+
+    $('.services-aside__inp-number').styler();
+
+
+    // CALENDER
     
     new AirDatepicker('#airdatepicker', {
       autoClose: true,

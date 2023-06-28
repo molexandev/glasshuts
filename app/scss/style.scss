@@ -752,13 +752,15 @@
    }
    &__form {
       width: 660px;
+      position: relative;
    }
    &__label {
       margin-bottom: 24px;
       display: block;
       width: 660px;
       height: 70px;
-   } 
+      position: relative;
+   }
    &__box {
       position: relative;
    }
@@ -779,11 +781,56 @@
             display: none;            
          }
       }
+      // &:checked .oose-services__arrowsch{
+      //    svg.choose-services__arrow-close{
+      //       display: none;
+      //    }
+      //    svg.choose-services__arrow-open{
+      //       display: block;
+      //    }
+      // }
    }
    &__svg{
       display: block;
    }
    &__svg-checked{
+      display: none;
+   }
+   &__arrows{
+      position: absolute;
+      right: 24px;
+      top: 26px;
+   }
+   &__arrow-open{
+      width: 20px;
+      height: 12px;
+      display: none;
+   }
+   &__arrow-open2{
+      width: 20px;
+      height: 12px;
+      display: none;
+   }
+   &__arrow-open--active{
+      display: block;
+   }
+   &__arrow-open--active2{
+      display: block;
+   }
+   &__arrow-close{
+      width: 20px;
+      height: 12px;
+      display: block;
+   }
+   &__arrow-close2{
+      width: 20px;
+      height: 12px;
+      display: block;
+   }
+   &__arrow-close--active{
+      display: none;
+   }
+   &__arrow-close--active2{
       display: none;
    }
    &__circle{
@@ -858,9 +905,6 @@
          font-size: 14px;
          border: none;
       }
-   }
-   &__inp-number{
-
    }
    &__label + .services-aside__label{
       padding-left: 20px;
@@ -997,6 +1041,7 @@
  }
 .form-open {
    margin-bottom: 50px;
+   display: none;
    &__form {
       max-width: 420px;
    }
