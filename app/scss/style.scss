@@ -758,7 +758,7 @@
       display: block;
       width: 660px;
       height: 70px;
-   }
+   } 
    &__box {
       position: relative;
    }
@@ -804,58 +804,197 @@
       background-color: $accent;
       z-index: 1;
    }
-   &__text-box {
-   }
    &__text-title {
+      font-size: 18px;
+      @extend %OpenSans-SemiBold-600;
+      line-height: 20px;
+      color: #333;
    }
    &__text-info {
-   }
-   &__box-right {
+      font-size: 16px;
+      line-height: 18px;
    }
    &__text-rght {
+      font-size: 14px;
+      line-height: 18px;
    }
-   &__info {
-   }
+
 }
 .services-aside {
+   width: 432px;
+   height: 590px;
+   border: 0.7px solid $default;
+   padding: 24px;
    &__price {
+      margin-bottom: 21px;
    }
    &__price-num {
+      @extend %OpenSans-SemiBold-600;
+      font-size: 24px;
+      line-height: 40px;
+      margin-right: 7px;
    }
    &__price-deskr {
+      font-size: 16px;
+      line-height: 40px;
    }
    &__form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      border: 1px solid $default;
+      width: 384px;
+      height: 68px;
+      padding: 15px 20px;
    }
-   &__label {
+   &__label{
+      width: 110px;
+      height: 38px;
+      input{
+         width:83px;
+         height: 18px;
+         outline: none;
+         font-size: 14px;
+         border: none;
+      }
    }
-   &__name {
+   &__inp-number{
+
+   }
+   &__label + .services-aside__label{
+      padding-left: 20px;
+      border-left: 1px solid $default;
    }
    &__btn {
+      width: 384px;
+      height: 60px;
+      @extend %btn;
+      margin-bottom: 30px;
    }
    &__resume {
-   }
-   &__names {
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      line-height: 18px;
+      color: #333;
+      margin-bottom: 25px;
    }
    &__item {
-   }
-   &__quanriry {
+      margin-bottom: 20px;
    }
    &__total {
-   }
-   &__total-title {
-   }
-   &__total-num {
-   }
-   &__form-bottom {
+      font-size: 20px;
+      @extend %OpenSans-SemiBold-600;
+      line-height: 18px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
    }
    &__label-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
    }
    &__input-bottom {
+      width: 282px;
+      height: 50px;
+      border: 1px solid $default;
+      padding: 15px 20px;
+      &[placeholder]{
+         font-size: 16px;
+         line-height: 18px;
+         color: #828282;
+      }
+      &:focus-visible{
+         outline: 1px solid $hover;
+         border: none   ;
+      }
    }
    &__btn-bottom {
+      width: 101px;
+      height: 50px;
+      @extend %btn;
    }
 }
+.jq-number__spin {
+   position: absolute;
+   top: 0;
+   right: 9px;
+   width: 18px;
+   height: 18px;
+   border: none;
+   background: transparent;
+   box-shadow:none;
+   text-shadow: none;
+   cursor: pointer;
+ }
+ .jq-number__spin:hover {
+   background:transparent;
+ }
+.jq-number__field input{
+   text-align: center;
+}
+.jq-number.focused .jq-number__field{
+   border: none;
+   outline: none;  
+ }
+.jq-number__field{
+   border: none;
+   outline: none;
+   box-shadow: none;
+   width: 59px;
+   height: 18px;
+   font-size: 14px;
+}
+.jq-number__spin.minus {
+   top: 0;
+   left: 0;
+   bottom: 0;
+   width: 18px;
+   height: 18px;
+   background-color: transparent;
 
+ }
+.jq-number__spin::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 11px;
+   width: 0;
+   height: 0;
+   border: none;
+ }
+ .jq-number__spin.minus::after {
+   top: 9px;
+   border:none;
+ }
+ .minus::after{
+   content: '';
+   position: absolute;
+   width: 18px;
+   height: 1px;
+   left: 0;
+   background-color: #000;
+ }
+ .plus::before{
+   content: '';
+   position: absolute;
+   width: 18px;
+   height: 1px;
+   top: 8px;
+   left: 0;
+   background-color: #000;
+ }
+ .plus::after{
+   content: '';
+   position: absolute;
+   width: 1px;
+   height: 18px;
+   background-color: #000;
+   left: 9px;
+   top: 0;
+ }
 .form-open {
    margin-bottom: 50px;
    &__form {
@@ -913,10 +1052,6 @@
       height: 70px;
       background-color: #fff;
       z-index: 1;
-   }
-   &__text-title {
-   }
-   &__text-info {
    }
 }
 

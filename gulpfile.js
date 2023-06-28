@@ -61,6 +61,8 @@ function scripts() {
       'node_modules/jquery/dist/jquery.js',
       'node_modules/slick-carousel/slick/slick.js',
       'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+      'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
+      'node_modules/air-datepicker/air-datepicker.js',
       'app/js/animation.js',
       'app/js/main.js'
    ])

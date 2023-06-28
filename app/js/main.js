@@ -23,17 +23,22 @@ $(function () {
         draggable: true,
     });
 
-    // BOOKING SLIDE
+    // // BOOKING SLIDE
 
-    $(".choose-services__label").on("click", function () {
-      $(".choose-services__input").toggleClass("choose-services__input--active");
-      $(this).next().slideToggle();
+    // $(".choose-services__label").on("click", function () {
+    //   $(".choose-services__input").toggleClass("choose-services__input--active");
+    //   $(this).next().slideToggle();
+    // });
+
+    $('input ').styler();
+    
+    new AirDatepicker('#airdatepicker', {
+      autoClose: true,
+      position: 'bottom center',
     });
-
-
-
-  //   $(".asdasdasdas").on("click", function () {
-  //     $('.asdasdasdas').toggleClass("choose-services__label-77777777777");
-  // });
-
-});
+    new AirDatepicker('#airdatepicker2', {
+      autoClose: true,
+      position: 'bottom center',
+    });
+    
+  });

@@ -11,6 +11,7 @@
   "devDependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "@fancyapps/ui": "^5.0.19",
+    "air-datepicker": "^3.3.5",
     "animate.css": "^4.1.1",
     "browser-sync": "^2.27.11",
     "del": "^6.1.1",
@@ -28,6 +29,7 @@
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
     "jquery": "^3.6.3",
+    "jquery-form-styler": "^2.0.2",
     "sass": "^1.58.1",
     "slick-carousel": "^1.8.1"
   }
