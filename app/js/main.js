@@ -37,14 +37,26 @@ $(function () {
       $('.choose-services__arrow-close2').toggleClass("choose-services__arrow-close--active2");
     });
 
-    // $("#choose-services__inp1, #choose-services__inp2").on("click", function () {
-    //   $('.choose-services__arrow-open').toggleClass("choose-services__arrow-open--active");
-    // });
+    // MASK
+
+    var element = document.getElementById('card-number');
+    var maskOptions = {
+      mask: '0000-0000-0000-0000'
+    };
+    var mask = IMask(element, maskOptions);
+
+    var element = document.getElementById('phone-number');
+    var maskOptions = {
+      mask: '+00(000)-000-00-00'
+    };
+    var mask = IMask(element, maskOptions);
 
 
     // FORM styller
 
     $('.services-aside__inp-number').styler();
+    $('.payment__select-flag').styler();
+    $('.payment__select-country').styler();
 
 
     // CALENDER
@@ -59,3 +71,7 @@ $(function () {
     });
     
   });
+
+
+
+  

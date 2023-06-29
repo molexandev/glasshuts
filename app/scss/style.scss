@@ -53,6 +53,9 @@
       width: 200px;
       height: 60px;
       @extend %btn;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 	}
 }
 .logo {
@@ -738,6 +741,7 @@
       display: flex;
       justify-content: space-between;
       padding: 0 32px 0 146px;
+      margin-bottom: 60px;
    }
    &__choice {
       max-width: 660px;
@@ -781,14 +785,6 @@
             display: none;            
          }
       }
-      // &:checked .oose-services__arrowsch{
-      //    svg.choose-services__arrow-close{
-      //       display: none;
-      //    }
-      //    svg.choose-services__arrow-open{
-      //       display: block;
-      //    }
-      // }
    }
    &__svg{
       display: block;
@@ -915,6 +911,10 @@
       height: 60px;
       @extend %btn;
       margin-bottom: 30px;
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
    }
    &__resume {
       display: flex;
@@ -1100,8 +1100,167 @@
    }
 }
 
+//   =======   BOOKING info  =======
+.booking-info {
+   &__inner {
+      padding-left: 147px;
+      max-width: 807px;
+      padding-top: 20px;
+   }
+   &__item {
+      margin-bottom: 100px;
+   }
+   &__title {
+      font-size: 24px;
+      line-height: 24px;
+      @extend %OpenSans-SemiBold-600;
+      padding-bottom: 20px;
+      width: 100%;
+      margin-bottom: 24px;
+      border-bottom: 1px solid $default;
+   }
+   &__content {
+      font-size: 16px;
+      @extend %OpenSans-Regular-400;
+      line-height: 28px;
+      color: #333;
+   }
+   &__list-item { 
+      margin-bottom: 15px;
+   }
+   &__text {
+   }
+}
 
+//   =======   PAYMENT   =======
+.payment {
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__forms {
+      max-width: 660px;
+   }
+   &__forms-item {
+      margin-bottom: 100px;
+   }
+   &__form-title {
+      font-size: 24px;
+      @extend %OpenSans-Regular-400;
+      line-height: 24px;
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+      width: 100%;
+      border-bottom: 1px solid $default;
+   }
+   &__information-form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+   }
+   &__input {
+      width: 100%;
+      height: 50px;
+      border: 1px solid $default;
+      outline: none;
+      padding: 16px 22px;
+      font-size: 16px;
+      @extend %OpenSans-Regular-400;
+      line-height: 18px;
+      color: #333;
+      &[placeholder]{
+         color: #828282;
+      }
+   }
+   &__select-box {
+      position: relative;
+   }
+   &__input-box{
+      position: relative;
+   }
+   &__select-flag {
+      position: absolute;
+      top: 12px;
+      left: 22px;
+   } 
+   &__select-option1 {
+      width: 25px;
+      height: 17px;
+      margin: 5px 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/dn-flag.png);
+   }
+   &__select-option2 {
+      width: 25px;
+      height: 17px;
+      margin: 5px 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/de-flag.png);
+   }
+   &__select-option3 {
+      width: 25px;
+      height: 17px;
+      margin: 5px 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/gb-flag.svg);
+   }
+   &__select {
+   }
+   &__payment-form {
+   }
+   &__payment-form-top {
+   }
+   &__select-card {
+   }
+   &__payment-form-bottom {
+   }
+}
+#phone-number{
+   padding-left: 65px;
+}
+.jq-selectbox li.selected {
+   background-color: transparent;
+   color: #fff;
+ }
+.jq-selectbox__select {
+   position: absolute;
+   width: 25px;
+   height: 17px;
+   border: none;
+   padding: 0;
+   background:transparent;
+   box-shadow: none;
+   text-shadow: none;
+   &:hover{
+      background: none;
+   }
+   &:active {
+      background:none;
+      box-shadow: none;
+      outline: none;
+   }
+   &:focus-visible{
+      outline: none;
+   }
+}
+.jq-selectbox.focused .jq-selectbox__select{
+   border: none;
+}
+.jq-selectbox__trigger {
+   display: none;
+ }
+.jq-selectbox__dropdown{
+   top: 25px!important;
+}
+.jq-selectbox .placeholder{
+   display: none;
+}
+#select-country-styler{
 
+}
 
 
 

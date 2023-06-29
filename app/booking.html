@@ -42,7 +42,7 @@
                      </svg>
                   </a>
                </div>
-               <button class="menu__btn" type="submit">Book Now</button>
+               <a class="menu__btn" href="booking.html">Book Now</a>
             </nav>
          </div>
       </header>
@@ -101,7 +101,7 @@
                   <div class="form-open form-open__inp1">
                      <label class="form-open__label" for="form-open___1">
                         <div class="form-open__box">
-                           <input class="form-open__input" type="radio" id="form-open___1" name="subchoose">
+                           <input class="form-open__input" type="radio" id="form-open___1" name="choose">
                            <span class="form-open__circle">
                               <svg class="form-open__svg-checked">
                                  <use xlink:href="../images/sprite.svg#circle-checked" width="34" height="34"></use>
@@ -120,7 +120,7 @@
                      </label>
                      <label class="form-open__label" for="form-open___2">
                         <div class="form-open__box">
-                           <input class="form-open__input" type="radio" id="form-open___2" name="subchoose">
+                           <input class="form-open__input" type="radio" id="form-open___2" name="choose">
                            <span class="form-open__circle">
                               <svg class="form-open__svg-checked">
                                  <use xlink:href="../images/sprite.svg#circle-checked" width="34" height="34"></use>
@@ -139,7 +139,7 @@
                      </label>
                      <label class="form-open__label" for="form-open___3">
                         <div class="form-open__box">
-                           <input class="form-open__input" type="radio" id="form-open___3" name="subchoose" checked>
+                           <input class="form-open__input" type="radio" id="form-open___3" name="choose" checked>
                            <span class="form-open__circle">
                               <svg class="form-open__svg-checked">
                                  <use xlink:href="../images/sprite.svg#circle-checked" width="34" height="34"></use>
@@ -159,7 +159,7 @@
                   </div>
                   <label class="choose-services__label" for="choose-services__inp2">
                      <div class="choose-services__box">
-                        <input class="choose-services__input" id="choose-services__inp2" type="radio" name="choose">
+                        <input class="choose-services__input" id="choose-services__inp2" type="radio" name="choose2">
                         <span class="choose-services__circle">
                            <svg class="choose-services__svg-checked">
                               <use xlink:href="../images/sprite.svg#circle-checked" width="34" height="34"></use>
@@ -190,7 +190,7 @@
                   <div class="form-open form-open__inp2">
                      <label class="form-open__label" for="form-open__1">
                         <div class="form-open__box">
-                           <input class="form-open__input" type="radio" id="form-open__1" name="subchoose2">
+                           <input class="form-open__input" type="radio" id="form-open__1" name="choose2">
                            <span class="form-open__circle">
                               <svg class="form-open__svg-checked">
                                  <use xlink:href="../images/sprite.svg#circle-checked" width="34" height="34"></use>
@@ -209,7 +209,7 @@
                      </label>
                      <label class="form-open__label" for="form-open__2">
                         <div class="form-open__box">
-                           <input class="form-open__input" type="radio" id="form-open__2" name="subchoose2">
+                           <input class="form-open__input" type="radio" id="form-open__2" name="choose2">
                            <span class="form-open__circle">
                               <svg class="form-open__svg-checked">
                                  <use xlink:href="../images/sprite.svg#circle-checked" width="34" height="34"></use>
@@ -228,7 +228,7 @@
                      </label>
                      <label class="form-open__label" for="form-open__3">
                         <div class="form-open__box">
-                           <input class="form-open__input" type="radio" id="form-open__3" name="subchoose2" checked>
+                           <input class="form-open__input" type="radio" id="form-open__3" name="choose2" checked>
                            <span class="form-open__circle">
                               <svg class="form-open__svg-checked">
                                  <use xlink:href="../images/sprite.svg#circle-checked" width="34" height="34"></use>
@@ -278,18 +278,18 @@
                <form action="#" class="services-aside__form">
                   <label class="services-aside__label" for="calender">
                      <div class="services-aside__name">Check in</div>
-                     <input type="text" id="airdatepicker" placeholder="01.01.2024">
+                     <input type="text" id="airdatepicker" placeholder="01.01.2024" readonly>
                   </label>
                   <label class="services-aside__label" for="calender">
                      <div class="services-aside__name">Check out</div>
-                     <input type="text" id="airdatepicker2" placeholder="01.01.2024">
+                     <input type="text" id="airdatepicker2" placeholder="01.01.2024" readonly>
                   </label>
                   <label class="services-aside__label" for="#">
                      <div class="services-aside__name">Guests</div>                     
                      <input type="number" min="1" value="1" class="services-aside__inp-number" readonly>
                   </label>
                </form>              
-               <button class="services-aside__btn" type="submit">Book</button>
+               <a class="services-aside__btn" href="payment.html">Book</a>
                <div class="services-aside__resume">
                   <ul class="services-aside__names">
                      <li class="services-aside__item">3.200kr x 2 nights</li>
@@ -318,7 +318,37 @@
          </div>
       </div>
    </section>
-   section
+   <section class="booking-info">
+      <div class="container">
+         <div class="booking-info__inner">
+            <div class="booking-info__item">
+               <h3 class="booking-info__title">Hut rules</h3>
+               <div class="booking-info__content">
+                  <ul class="booking-info__list">
+                     <li class="booking-info__list-item">Check-in:  2:00 PM - 11:00 PM</li>
+                     <li class="booking-info__list-item">Checkout: 11:00 AM</li>
+                     <li class="booking-info__list-item">Not suitable for children and infants</li>
+                     <li class="booking-info__list-item">No smoking</li>
+                     <li class="booking-info__list-item">No pets</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="booking-info__item">
+               <h3 class="booking-info__title">Cancellation policy</h3>
+               <div class="booking-info__content">
+                  <p class="booking-info__text">Free cancellation until 1:00 PM on Mar 27
+                     After that, cancel before 2:00 PM on Apr 1 and get a 50% refund, minus the first night and service fee.</p>
+               </div>
+            </div>
+            <div class="booking-info__item">
+               <h3 class="booking-info__title">Important Information</h3>
+               <div class="booking-info__content">
+                  <p class="booking-info__text">You need to hike a steep hill to arrive at the treehouses, it takes approx 20-30 minutes on a trail with stairs and uneven ground.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
 </main>
 <footer class="footer">
    <div class="container">
