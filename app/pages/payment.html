@@ -12,56 +12,65 @@
                      <input class="payment__input" type="email" placeholder="Email">
                      <div class="payment__select-box">
                         <select class="payment__select-flag" name="country" id="">
-                           <option value="" class="payment__select-option payment__select-option1"></option>
-                           <option value="" class="payment__select-option payment__select-option2"></option>
-                           <option value="" class="payment__select-option payment__select-option3"></option>
+                           <option class="payment__select-option payment__select-option1"></option>
+                           <option class="payment__select-option payment__select-option2"></option>
+                           <option class="payment__select-option payment__select-option3"></option>
                         </select>
                         <input class="payment__input" type="text" id="phone-number" placeholder="Phone number">
                      </div>
                      <input class="payment__input" type="text" placeholder="Address">
                      <input class="payment__input" type="text" placeholder="Postal code">
                      <input class="payment__input" type="text" placeholder="City">
-                     <div class="payment__input-box">
-                        <select class="payment__select-country" name="Country" id="select-country">
-                           <option value="" class="payment__select-option" disabled>Country</option>
-                           <option value="" class="payment__select-option">Denmark</option>
-                           <option value="" class="payment__select-option">Germany</option>
-                           <option value="" class="payment__select-option">United Kingdom</option>
-                        </select>
-                        <input class="payment__input" type="text">
-                     </div>
+                     <input class="payment__input" type="text" placeholder="Country">
                   </form>
                </div>
                <div class="payment__forms-item">
-                  <h3 class="payment__form-title">Pay with</h3>
+                  <h3 class="payment__form-title payment__form-title-icons"><span>Pay with</span>
+                     <div class="payment__icons-box">
+                        <svg class="payment__icon-svg">
+                           <use xlink:href="../images/sprite.svg#pay-pal-payment" width="36" height="36"></use>
+                        </svg>
+                        <svg class="payment__icon-svg">
+                           <use xlink:href="../images/sprite.svg#mastercard-payment" width="35" height="35"></use>
+                        </svg>
+                        <svg class="payment__icon-svg">
+                           <use xlink:href="../images/sprite.svg#visa-payment" width="35" height="35"></use>
+                        </svg>
+                        <svg class="payment__icon-svg">
+                           <use xlink:href="../images/sprite.svg#bank-transfer-payment" width="35" height="35"></use>
+                        </svg>
+                     </div>
+                  </h3>
                   <form class="payment__payment-form" action="#">
                      <div class="payment__payment-form-top">
-                        <select class="payment__select-card" name="" id="selectcountry">
-                           <option value="Credit card" class="payment__select-option">Credit card</option>
-                           <option value="Debit card<" class="payment__select-option">Debit card</option>
-                        </select>
-                        <input class="payment__input" id="card-number" type="text" placeholder="XXXX XXXX XXXX XXXX">
+                        <input class="payment__input" id="card-number" type="text" placeholder="Card number">
                      </div>
                      <div class="payment__payment-form-bottom">
                         <input class="payment__input" type="text" placeholder="Expiration">
-                        <input class="payment__input" type="text" placeholder="CCV">
+                        <input class="payment__input" type="password" placeholder="CCV" maxlength="3">
                         <input class="payment__input" type="text" placeholder="ZIP code ">
-                        <select class="payment__select" name="" id="" aria-placeholder="Country">
-                           <option class="payment__select-option" value="" selected>Denmark</option>
-                           <option class="payment__select-option" value="">Germany</option>
-                           <option class="payment__select-option" value="">United Kingdom</option>
-                        </select>
-                     </div>                     
+                     </div>
                   </form>
                </div>
                <div class="payment__forms-item">
                   <h3 class="payment__form-title">Pay with</h3>
-                  <textarea class="payment__textarea"></textarea>
+                  <textarea class="payment__textarea" placeholder="Leave a message"></textarea>
                   <label for="payment-checkbox" class="payment__label">
-                     <input class="payment__input-xheckbox" type="checkbox" id="payment-checkbox">
-                     I have read and accept 
+                     <div class="payment__checkbox-bottom">
+                        <input class="payment__input-xheckbox" type="checkbox" required id="payment-checkbox"
+                           onchange="fun1()">
+                        <div class="payment__input-checkbox-svg">
+                           <svg class="payment__icon-checked-svg">
+                              <use xlink:href="../images/sprite.svg#booking-checked-svg" width="35" height="35"></use>
+                           </svg>
+                           <svg class="payment__icon-unchecked-svg">
+                              <use xlink:href="../images/sprite.svg#booking-unchecked-svg" width="35" height="35"></use>
+                           </svg>
+                        </div>
+                        <span>I have read and accept</span>
+                        <a class="payment__link" href="#">Terms & Conditions</a>
+                     </div>
                   </label>
-                  <a class="payment__link" href="#">Terms & Conditions</a>
                   <button class="payment__btn">confirm and pay</button>
                </div>
             </div>
@@ -84,7 +93,6 @@
                      <input type="number" min="1" value="1" class="services-aside__inp-number" readonly>
                   </label>
                </form>
-               <button class="services-aside__btn" type="submit">Book</button>
                <div class="services-aside__resume">
                   <ul class="services-aside__names">
                      <li class="services-aside__item">3.200kr x 2 nights</li>
@@ -103,12 +111,6 @@
                   <h3 class="services-aside__total-title">Total</h3>
                   <div class="services-aside__total-num">7.000kr</div>
                </div>
-               <form action="#" class="services-aside__form-bottom">
-                  <label for="#" class="services-aside__label-bottom">
-                     <input type="text" class="services-aside__input-bottom" placeholder="Coupon Code">
-                     <button class="services-aside__btn-bottom" type="submit">apply</button>
-                  </label>
-               </form>
             </div>
          </div>
       </div>

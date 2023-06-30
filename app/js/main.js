@@ -42,9 +42,10 @@ $(function () {
     var element = document.getElementById('card-number');
     var maskOptions = {
       mask: '0000-0000-0000-0000'
-    };
+    };    
     var mask = IMask(element, maskOptions);
 
+    
     var element = document.getElementById('phone-number');
     var maskOptions = {
       mask: '+00(000)-000-00-00'
@@ -56,7 +57,6 @@ $(function () {
 
     $('.services-aside__inp-number').styler();
     $('.payment__select-flag').styler();
-    $('.payment__select-country').styler();
 
 
     // CALENDER
@@ -72,6 +72,20 @@ $(function () {
     
   });
 
+  // CHECKBOX
+
+  function fun1() {
+    var chbox;
+    chbox=document.getElementById('payment-checkbox');
+      if (chbox.checked) {
+        $('.payment__icon-checked-svg').addClass("payment__icon-checked-svg--active");
+        $('.payment__icon-unchecked-svg').addClass("payment__icon-unchecked-svg--active");
+      }
+      else {
+        $('.payment__icon-checked-svg').removeClass("payment__icon-checked-svg--active");
+        $('.payment__icon-unchecked-svg').removeClass("payment__icon-unchecked-svg--active");
+      }
+    };
 
 
   
