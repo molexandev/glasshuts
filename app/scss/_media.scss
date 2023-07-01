@@ -1,0 +1,369 @@
+@media (max-width: 1600px){
+   .container{
+      max-width: 100%;
+   }
+   .footer{
+      &__wrapper{
+         justify-content: space-around;
+         padding: 100px 46px;         
+      }
+   }
+   .slick-list {
+      padding-bottom: 54px;
+  }
+   .slick-prev {
+      left: 845px;
+   }
+   .slick-next {
+      right: 400px;     
+   }
+}
+@media (max-width: 1410px){
+   .menu{
+      column-gap: 150px;
+      &__list{
+         column-gap: 20px;
+      }
+      &__btn{
+         margin-right: 0;
+      }
+   }
+   .logo{
+      margin-left: 15px;
+   }
+   .footer{
+      &__wrapper{
+         justify-content: space-between;
+         column-gap: 30px;
+         padding: 50px 30px;         
+      }
+      &__list{
+         column-gap: 15px;
+      }
+   }
+   .slick-list {
+      padding-bottom: 154px;
+  }
+   .slick-prev {
+      top: 500px;
+      left: 645px;
+   }
+   .slick-next {
+      top: 500px;
+      right: 400px;     
+   }
+   .top-slider{
+      &__btn{
+         top: 537px;
+      }
+      &__price{
+         top: 537px;
+      }
+   }
+   .cabins{
+      &__inner{
+         column-gap: 50px;
+         padding-left: 15px;
+      }
+   }
+}
+@media (max-width: 1200px){
+   .menu{
+      column-gap: 100px;
+      &__flags{
+         margin-right: 25px;
+      }
+   }
+   .footer{
+      &__link{
+         font-size: 13px;
+      }
+   }
+   .slick-list {
+      padding-bottom: 34px;
+  }
+   .slick-prev {
+      display: none!important;
+   }
+   .slick-next {
+      display: none!important  
+   }
+   .top-slider{
+      &__btn{
+         display: none;
+      }
+      &__price{
+         display: none;
+      }
+   }   
+   .cabins{
+      &__inner{
+         column-gap: 30px;
+         align-items: center;
+      }
+      &__info{
+         max-width: 370px;
+      }
+      &__text{
+         font-size: 14px;
+         line-height: 24px;
+      }
+   }
+}
+@media (max-width: 991px){
+   .menu{
+      column-gap: 25px;
+      &__flags{
+         margin: 0 20px;
+      }
+      &__list{
+         column-gap: 15px;
+      }
+      &__link{
+         font-size: 12px;
+      }
+      &__btn{
+         margin-right: 0;
+         font-size: 12px;
+         width: 100px;
+         height: 40px;
+      }
+   }
+   .logo{
+      margin-left: 0;
+   }
+   .footer{
+      &__wrapper{
+         column-gap: 15px;
+         padding: 50px 10px;
+      }
+      &__newsletter{
+         max-width: 300px;
+      }
+      &__text{
+         margin-bottom: 20px;
+      }
+      &__list{
+         flex-wrap: wrap;
+      }
+      &__item{
+         margin-bottom: 10px;         
+      }
+      &__link{
+         font-size: 12px;
+      }
+   }
+   .top-slider{
+      &__title{
+         font-size: 52px;
+      }
+   }
+   .cabins{
+      &__inner{
+         column-gap: 15px;
+         margin-bottom: 30px;
+      }     
+   }
+}
+@media (max-width: 768px){
+   .header{
+      z-index: 100;
+      height: 75px;
+   }
+   .menu{
+      z-index: 1000;
+      &__wrapper{
+         order: 2;
+         z-index: 100;
+      }
+      &__flags{
+         order: 1;      
+      }
+      &__btn{
+         order: 2;
+         margin-right: 30px;
+      }
+      &__list{
+         position: absolute;
+         width: 100%;
+         height: auto;
+         top: 75px;
+         left: 0;
+         background-color: $accent;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+         z-index: 0;
+         a{
+            font-size: 18px;
+            line-height: 30px;
+         }
+         transform: translateX(100%);
+         transition: all .5s;
+      }
+      &__list--active{
+         transform: translateX(0%);
+         overflow: hidden;
+         z-index: 0;
+      }
+      &__item{
+         margin: 15px 0;
+         z-index: 0;
+      }
+      &__btn-slider{
+         order: 3;
+         margin-right: 10px;
+         display: block;
+         width: 30px;
+         height: 20px;
+         border: none;
+         padding: 0;
+         background-color: transparent;
+         cursor: pointer;
+         position: relative;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         z-index: 100;
+         span{
+            width: 100%;
+            height: 2px;
+            background-color: $default;
+         }
+         &::before,
+         &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: $default;
+         }
+         &::before{
+            top: 0;
+         }
+         &::after{
+            bottom: 0;
+         }
+      }
+      &__flags{
+         z-index: 100;
+      }
+      &__btn{
+         z-index: 100;
+      }
+   }
+   .logo{
+      order: 1;
+      z-index: 100;
+   }
+   .footer{
+      &__wrapper{
+         flex-wrap: wrap;
+         justify-content: center;
+         row-gap: 70px
+         ;
+      }
+      &__newsletter{
+         width: 100%;
+      }
+      &__info{
+         width: 100%;
+      }
+      &__payment{
+         justify-content: center;
+      }
+   }
+   .top-slider{
+      &__title{
+         font-size: 32px;
+         line-height: 52px;
+         top: 0;
+         right: 15px;
+      }
+      &__text{
+         text-align: right;
+         font-size: 16px;
+         line-height: 28px;
+         position: absolute;
+         top: 55px;
+         right: 15px;
+         max-width: 310px;
+      }
+      &__inner{
+         margin-bottom: 30px;
+      }
+   }
+   .slick-dots {
+      position: absolute;
+      width: 100%;
+      z-index: 2;
+      left: 0px;
+      top: 150px;
+      bottom: 35px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 0;
+      justify-items: center;
+      align-items: center;
+   }
+   .slick-dots li button {
+      width: 20px;
+      height: 2px !important;
+   }
+   .cabins{
+      &__inner{
+         column-gap: 15px;
+         margin-bottom: 30px;
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+      &__info{
+         max-width: 100%;
+         margin-bottom: 20px;
+      }
+      &__title{
+         font-size: 32px;
+         margin-bottom: 30px;
+      }
+      &__text{
+         font-size: 14px;
+         line-height: 24px;
+      }
+   }
+}
+@media (max-width: 550px){
+   .top-slider{
+      &__title{
+         font-size: 32px;
+         line-height: 52px;
+      }
+   }
+}
+@media (max-width: 450px){
+   .menu{
+      &__btn{
+         display: none;
+      }
+   }
+   .footer{
+      &__list{
+         display: block;
+         text-align: center;
+      }
+      &__payment{
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         row-gap: 20px;
+         justify-items: center;
+      }
+   }
+   .top-slider{
+      display: none;
+   }
+   .cabins{
+      &__img{
+         object-fit: cover;
+      }
+   }
+}

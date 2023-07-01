@@ -4,6 +4,9 @@ body {
    @extend %OpenSans-Regular-400 ;
    color: $default;
 }
+.lock{
+   overflow: hidden;
+}
 .wrapper{
    min-height: 100%;
    display: flex;
@@ -14,7 +17,7 @@ body {
    padding-top: 100px;
 }
 .container{
-   max-width: 1440px;
+   width: 1440px;
    padding: 0 15px;
    margin: 0 auto;
 }

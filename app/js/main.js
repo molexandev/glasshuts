@@ -23,6 +23,13 @@ $(function () {
         draggable: true,
     });
 
+    // MENU
+
+    $(".menu__btn-slider, .menu a").on("click", function () {
+      $(".menu__list").toggleClass("menu__list--active");
+      $("body").toggleClass("lock");
+    });
+
     // BOOKING SLIDER
 
     $("#choose-services__inp1").on("click", function () {
