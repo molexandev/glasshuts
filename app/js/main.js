@@ -23,7 +23,7 @@ $(function () {
         draggable: true,
     });
 
-    // BOOKING SLIDE
+    // BOOKING SLIDER
 
     $("#choose-services__inp1").on("click", function () {
       $('.form-open__inp1').slideToggle();
@@ -35,6 +35,12 @@ $(function () {
       $('.form-open__inp2').slideToggle();
       $('.choose-services__arrow-open2').toggleClass("choose-services__arrow-open--active2");
       $('.choose-services__arrow-close2').toggleClass("choose-services__arrow-close--active2");
+    });
+
+    // FAQ slider
+
+    $(".faq__title").on("click", function () {
+      $(this).next().slideToggle();
     });
 
     // MASK
