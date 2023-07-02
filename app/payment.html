@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="container">
+            <nav class="menu">
+               <a class="logo" href="index.html">
+                  <svg class="logo-svg">
+                     <use xlink:href="../images/sprite.svg#logo" width="71" height="65"></use>
+                  </svg>
+               </a>
+               <div class="menu__wrapper">
+                  <ul class="menu__list">
+                     <li class="menu__item">
+                        <a class="menu__link" href="index.html">Home</a>
+                     </li>
+                     <li class="menu__item">
+                        <a class="menu__link" href="hut.html">the hut</a>
+                     </li>
+                     <li class="menu__item">
+                        <a class="menu__link" href="area.html">The area</a>
+                     </li>
+                     <li class="menu__item">
+                        <a class="menu__link" href="booking.html">booking</a>
+                     </li>
+                     <li class="menu__item">
+                        <a class="menu__link" href="about.html">about us</a>
+                     </li>
+                     <li class="menu__item">
+                        <a class="menu__link" href="faq.html">faq</a>
+                     </li>                    
+                  </ul>
+                  <button class="menu__btn-slider">
+                     <span></span>
+                  </button>
+                  <div class="menu__flags">
+                     <a class="menu__flag" href="#">
+                        <svg class="menu__flags-svg">
+                           <use xlink:href="../images/sprite.svg#norway-flag" width="25" height="17"></use>
+                        </svg>
+                     </a>
+                     <a class="menu__flag" href="#">
+                        <svg class="menu__flags-svg">
+                           <use xlink:href="../images/sprite.svg#germany-flag" width="25" height="17"></use>
+                        </svg>
+                     </a>
+                     <a class="menu__flag" href="#">
+                        <svg class="menu__flags-svg">
+                           <use xlink:href="../images/sprite.svg#gb-flag" width="25" height="17"></use>
+                        </svg>
+                     </a>
+                  </div>
+                  <a class="menu__btn" href="booking.html">Book Now</a>
+               </div>
+            </nav>
+         </div>
+      </header>
+   
+<main class="main">
+   <section class="payment">
+      <div class="container">
+         <div class="payment__wrapper">
+            <div class="payment__forms">
+               <div class="payment__forms-item">
+                  <h3 class="payment__form-title">Personal Information</h3>
+                  <form class="payment__information-form" action="#">
+                     <input class="payment__input" type="text" placeholder="First name">
+                     <input class="payment__input" type="text" placeholder="Last Name">
+                     <input class="payment__input" type="email" placeholder="Email">
+                     <div class="payment__select-box">
+                        <select class="payment__select-flag" name="country" id="">
+                           <option class="payment__select-option payment__select-option1"></option>
+                           <option class="payment__select-option payment__select-option2"></option>
+                           <option class="payment__select-option payment__select-option3"></option>
+                        </select>
+                        <input class="payment__input" type="text" id="phone-number" placeholder="Phone number">
+                     </div>
+                     <input class="payment__input" type="text" placeholder="Address">
+                     <input class="payment__input" type="text" placeholder="Postal code">
+                     <input class="payment__input" type="text" placeholder="City">
+                     <input class="payment__input" type="text" placeholder="Country">
+                  </form>
+               </div>
+               <div class="payment__forms-item">
+                  <h3 class="payment__form-title payment__form-title-icons"><span>Pay with</span>
+                     <div class="payment__icons-box">
+                        <svg class="payment__icon-svg">
+                           <use xlink:href="../images/sprite.svg#pay-pal-payment" width="36" height="36"></use>
+                        </svg>
+                        <svg class="payment__icon-svg">
+                           <use xlink:href="../images/sprite.svg#mastercard-payment" width="35" height="35"></use>
+                        </svg>
+                        <svg class="payment__icon-svg">
+                           <use xlink:href="../images/sprite.svg#visa-payment" width="35" height="35"></use>
+                        </svg>
+                        <svg class="payment__icon-svg">
+                           <use xlink:href="../images/sprite.svg#bank-transfer-payment" width="35" height="35"></use>
+                        </svg>
+                     </div>
+                  </h3>
+                  <form class="payment__payment-form" action="#">
+                     <div class="payment__payment-form-top">
+                        <input class="payment__input" id="card-number" type="text" placeholder="Card number">
+                     </div>
+                     <div class="payment__payment-form-bottom">
+                        <input class="payment__input" type="text" placeholder="Expiration">
+                        <input class="payment__input" type="password" placeholder="CCV" maxlength="3">
+                        <input class="payment__input" type="text" placeholder="ZIP code ">
+                     </div>
+                  </form>
+               </div>
+               <div class="payment__forms-item">
+                  <h3 class="payment__form-title">Pay with</h3>
+                  <textarea class="payment__textarea" placeholder="Leave a message"></textarea>
+                  <label for="payment-checkbox" class="payment__label">
+                     <div class="payment__checkbox-bottom">
+                        <input class="payment__input-xheckbox" type="checkbox" required id="payment-checkbox"
+                           onchange="fun1()">
+                        <div class="payment__input-checkbox-svg">
+                           <svg class="payment__icon-checked-svg">
+                              <use xlink:href="../images/sprite.svg#booking-checked-svg" width="35" height="35"></use>
+                           </svg>
+                           <svg class="payment__icon-unchecked-svg">
+                              <use xlink:href="../images/sprite.svg#booking-unchecked-svg" width="35" height="35"></use>
+                           </svg>
+                        </div>
+                        <span>I have read and accept</span>
+                        <a class="payment__link" href="#">Terms & Conditions</a>
+                     </div>
+                  </label>
+                  <button class="payment__btn">confirm and pay</button>
+               </div>
+            </div>
+            <div class="payment__info services-aside">
+               <div class="services-aside__price">
+                  <span class="services-aside__price-num">3.200kr</span>
+                  <span class="services-aside__price-deskr">/ night</span>
+               </div>
+               <form action="#" class="services-aside__form">
+                  <label class="services-aside__label" for="calender">
+                     <div class="services-aside__name">Check in</div>
+                     <input type="text" id="airdatepicker" placeholder="01.01.2024" readonly>
+                  </label>
+                  <label class="services-aside__label" for="calender">
+                     <div class="services-aside__name">Check out</div>
+                     <input type="text" id="airdatepicker2" placeholder="01.01.2024" readonly>
+                  </label>
+                  <label class="services-aside__label" for="#">
+                     <div class="services-aside__name">Guests</div>
+                     <input type="number" min="1" value="1" class="services-aside__inp-number" readonly>
+                  </label>
+               </form>
+               <div class="services-aside__resume">
+                  <ul class="services-aside__names">
+                     <li class="services-aside__item">3.200kr x 2 nights</li>
+                     <li class="services-aside__item">Healthy Dinner</li>
+                     <li class="services-aside__item">Cleaning fee</li>
+                     <li class="services-aside__item">Car charge</li>
+                  </ul>
+                  <ul class="services-aside__quanriry">
+                     <li class="services-aside__item"> 6.400kr</li>
+                     <li class="services-aside__item">200kr</li>
+                     <li class="services-aside__item">400kr</li>
+                     <li class="services-aside__item">1.900kr</li>
+                  </ul>
+               </div>
+               <div class="services-aside__total">
+                  <h3 class="services-aside__total-title">Total</h3>
+                  <div class="services-aside__total-num">7.000kr</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</main>
+
+<footer class="footer">
+
+   <div class="container">
+
+      <div class="footer__wrapper">
+
+         <div class="footer__newsletter">
+
+            <h5 class="footer__title">Newsletter</h5>
+
+            <form class="footer__form" action="#">
+
+               <input class="footer__input" type="email" placeholder="Email Adrdess">
+
+               <button class="footer__btn" type="submit">
+
+                  <svg class="footer__arrov-svg">
+
+                     <use xlink:href="../images/sprite.svg#arrow-right" width="33" height="15"></use>
+
+                  </svg>
+
+               </button>
+
+            </form>
+
+            <p class="footer__text">Sign up to our newsletter for special things and receive 10% off your next order.
+
+            </p>
+
+            <div class="footer__copyright">© 2021 The Glass Huts</div>
+
+         </div>
+
+         <div class="footer__info">
+
+            <ul class="footer__list">
+
+               <li class="footer__item">
+
+                  <a class="footer__link" href="#">TERMS AND CONDITIONS</a>
+
+               </li>
+
+               <li class="footer__item">
+
+                  <a class="footer__link" href="#">CENCELLATION POLICY</a>
+
+               </li>
+
+               <li class="footer__item">
+
+                  <a class="footer__link" href="#">PRIVACY POLICY</a>
+
+               </li>
+
+            </ul>
+
+            <ul class="footer__payment">
+
+               <li class="footer__payment-item">
+
+                  <svg class="footer__paypal-svg">
+
+                     <use xlink:href="../images/sprite.svg#paypal" width="51" height="51"></use>
+
+                  </svg>
+
+               </li>
+
+               <li class="footer__payment-item">
+
+                  <svg class="footer__mastercard-svg">
+
+                     <use xlink:href="../images/sprite.svg#mastercard" width="49" height="49"></use>
+
+                  </svg>
+
+               </li>
+
+               <li class="footer__payment-item">
+
+                  <svg class="footer__visa-svg">
+
+                     <use xlink:href="../images/sprite.svg#visa" width="48" height="48"></use>
+
+                  </svg>
+
+               </li>
+
+               <li class="footer__payment-item">
+
+                  <svg class="footer__bank-svg">
+
+                     <use xlink:href="../images/sprite.svg#bank-transfer" width="32" height="32"></use>
+
+                  </svg>
+
+               </li>
+
+            </ul>
+
+         </div>
+
+      </div>
+
+   </div>
+
+</footer>
+
+<script src="js/main.min.js"></script>
+
+</div>
+
+</body>
+
+
+
+</html>
