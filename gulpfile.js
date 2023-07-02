@@ -64,8 +64,10 @@ function scripts() {
       'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
       'node_modules/air-datepicker/air-datepicker.js',
       'node_modules/imask/dist/imask.js',
+      'app/js/aircalendar.js',
       'app/js/animation.js',
-      'app/js/main.js'
+      'app/js/fadein-right.js',
+      'app/js/main.js',
    ])
    .pipe(concat('main.min.js'))
    .pipe(uglify())
