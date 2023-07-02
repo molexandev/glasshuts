@@ -27,6 +27,7 @@ $(function () {
 
     $(".menu__btn-slider, .menu a").on("click", function () {
       $(".menu__list").toggleClass("menu__list--active");
+      $(".menu__btn-slider").toggleClass("menu__btn-slider--active");
       $("body").toggleClass("lock");
     });
 
