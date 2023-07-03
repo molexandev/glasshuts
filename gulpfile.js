@@ -65,8 +65,8 @@ function scripts() {
       'node_modules/air-datepicker/air-datepicker.js',
       'node_modules/imask/dist/imask.js',
       'app/js/aircalendar.js',
+      'node_modules/wow.js/dist/wow.min.js',
       'app/js/animation.js',
-      'app/js/fadein-right.js',
       'app/js/main.js',
    ])
    .pipe(concat('main.min.js'))

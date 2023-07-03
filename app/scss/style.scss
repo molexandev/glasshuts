@@ -101,12 +101,8 @@
    height: 65px;
    z-index: 1000;
 }
-
-
 //   =======   SLIDER   =======
 .top-slider {
-   // animation-duration: 3s;
-   // animation-delay: 1s;
 	&__inner {
       margin-bottom: 113px;
 	}
@@ -250,6 +246,7 @@
    &__title {
       @extend %title;
       margin-bottom: 50px;
+      animation-delay: .3s
    }
    &__text {
       @extend %OpenSans-Light-300;
@@ -257,7 +254,7 @@
       font-size: 16px;
       line-height: 30px;
       margin-bottom: 20px;
-      animation-delay: .5s;
+      animation-delay: .7s
    }
    &__link {
       @extend %OpenSans-SemiBold-600;
@@ -267,7 +264,7 @@
       padding-bottom: 5px;
       transition: all .2s;
       border-bottom: 2px solid $default;
-      animation-delay: 1s;
+      animation-delay: 1.1s;
       &:hover{
          color: $hover;
          border-bottom: 2px solid $hover;
