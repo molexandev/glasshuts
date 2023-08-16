@@ -462,16 +462,25 @@
          color: $hover;
       }
    }
-   &__sicials {
+   &__socials {
       display: flex;
       justify-content: start;
       column-gap: 43px;
       margin-top: 50px;
    }
-   &__sicials-link{
+   &__socials-link{
       width: 50px;
       height: 50px;
       background-repeat: 50%;
+      path{
+         transition: all .2s;
+      }
+      &:hover{
+        svg path{
+            fill: $hover;
+            stroke: #edece0;
+         }
+      }
    }
    &__svg {
       width: 50px;
