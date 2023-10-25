@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Glass Huts</title>
    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -76,10 +76,10 @@
                      <input class="payment__input" type="text" placeholder="Last Name">
                      <input class="payment__input" type="email" placeholder="Email">
                      <div class="payment__select-box">
-                        <select class="payment__select-flag" name="country" id="">
-                           <option class="payment__select-option payment__select-option1"></option>
-                           <option class="payment__select-option payment__select-option2"></option>
-                           <option class="payment__select-option payment__select-option3"></option>
+                        <select class="payment__select-flag" name="country">
+                           <option class="payment__select-option payment__select-option1">.</option>
+                           <option class="payment__select-option payment__select-option2">.</option>
+                           <option class="payment__select-option payment__select-option3">.</option>
                         </select>
                         <input class="payment__input" type="text" id="phone-number" placeholder="Phone number">
                      </div>
@@ -145,17 +145,17 @@
                   <span class="services-aside__price-deskr">/ night</span>
                </div>
                <form action="#" class="services-aside__form">
-                  <label class="services-aside__label" for="calender">
+                  <label class="services-aside__label" for="airdatepicker3">
                      <div class="services-aside__name">Check in</div>
                      <input type="text" id="airdatepicker3" placeholder="01.01.2024" readonly>
                   </label>
-                  <label class="services-aside__label" for="calender">
+                  <label class="services-aside__label" for="airdatepicker4">
                      <div class="services-aside__name">Check out</div>
                      <input type="text" id="airdatepicker4" placeholder="01.01.2024" readonly>
                   </label>
-                  <label class="services-aside__label" for="#">
+                  <label class="services-aside__label" for="guests">
                      <div class="services-aside__name">Guests</div>
-                     <input type="number" min="1" max="21" value="1" class="services-aside__inp-number" readonly>
+                     <input class="services-aside__inp-number" id="guests" type="number" min="1" max="21" value="1" readonly>
                   </label>
                </form>
                <div class="services-aside__resume">
