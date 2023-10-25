@@ -394,6 +394,9 @@
       position: relative;
       margin-bottom: 150px;
    }
+   &__title{
+      display: none;
+   }
    &__img {
       width: 705px;
       height: 559px;
@@ -799,6 +802,9 @@
       column-gap: 96px;
       margin-bottom: 150px;
    }
+   &__title{
+      display: none;
+   }
    &__text {
       font-size: 40px;
       line-height: 56px;
@@ -811,6 +817,9 @@
 }
 .map-bottom{
    margin-bottom: -3px;
+   &__title{
+      display: none;
+   }
 }
 
 //   =======   BOOKING   =======
@@ -1013,6 +1022,11 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 40px;
+   }
+   &__form-bottom{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
    }
    &__label-bottom {
       display: flex;
@@ -1268,7 +1282,7 @@
       position: absolute;
       top: 12px;
       left: 22px;
-   } 
+   }
    &__select-option1 {
       display: block!important;
       width: 25px;

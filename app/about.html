@@ -14,7 +14,7 @@
             <nav class="menu">
                <a class="logo" href="index.html">
                   <svg class="logo-svg">
-                     <use xlink:href="../images/sprite.svg#logo" width="71" height="65"></use>
+                     <use xlink:href="images/sprite.svg#logo" width="71" height="65"></use>
                   </svg>
                </a>
                <div class="menu__wrapper">
@@ -44,17 +44,17 @@
                   <div class="menu__flags">
                      <a class="menu__flag" href="#">
                         <svg class="menu__flags-svg">
-                           <use xlink:href="../images/sprite.svg#norway-flag" width="25" height="17"></use>
+                           <use xlink:href="images/sprite.svg#norway-flag" width="25" height="17"></use>
                         </svg>
                      </a>
                      <a class="menu__flag" href="#">
                         <svg class="menu__flags-svg">
-                           <use xlink:href="../images/sprite.svg#germany-flag" width="25" height="17"></use>
+                           <use xlink:href="images/sprite.svg#germany-flag" width="25" height="17"></use>
                         </svg>
                      </a>
                      <a class="menu__flag" href="#">
                         <svg class="menu__flags-svg">
-                           <use xlink:href="../images/sprite.svg#gb-flag" width="25" height="17"></use>
+                           <use xlink:href="images/sprite.svg#gb-flag" width="25" height="17"></use>
                         </svg>
                      </a>
                   </div>
@@ -175,13 +175,19 @@
             </div>
             <div class="about-form__feedback">
                <form action="#" class="about-form__form">
-                  <label for="name" class="about-form__label-name">
-                     <input type="text" class="about-form__input-name" placeholder="First Name">
-                     <input type="text" class="about-form__input-name" placeholder="Last Name">
+                  <div class="about-form__label-name">
+                     <label for="name-inp1">
+                        <input class="about-form__input-name" id="name-inp1" type="text" placeholder="First Name">
+                     </label>
+                     <label for="name-inp2">
+                        <input class="about-form__input-name" id="name-inp2" type="text" placeholder="Last Name">
+                     </label>
+                  </div>
+                  <label for="info1" class="about-form__label-info">
+                     <input class="about-form__input-info" id="info1" type="email" placeholder="Email">
                   </label>
-                  <label for="info" class="about-form__label-info">
-                     <input type="email" class="about-form__input-info" placeholder="Email">
-                     <input type="text" class="about-form__input-info" placeholder="Subject">
+                  <label for="info2" class="about-form__label-info">
+                     <input class="about-form__input-info" id="info2" type="text" placeholder="Subject">
                   </label>
                   <textarea class="about-form__textarea" placeholder="Message"></textarea>
                </form>
@@ -192,7 +198,7 @@
             <p class="about-form__fromdenemark-text">From Denmark, With love...</p>
             <div class="about-form__fromdenemark-icon-box">
                <svg class="about-form__fromdenemark-icon">
-                  <use xlink:href="../images/sprite.svg#heart-about" width="35" height="35"></use>
+                  <use xlink:href="images/sprite.svg#heart-about" width="35" height="35"></use>
                </svg>
             </div>
          </div>
@@ -208,7 +214,7 @@
                <input class="footer__input" type="email" placeholder="Email Adrdess">
                <button class="footer__btn" type="submit">
                   <svg class="footer__arrov-svg">
-                     <use xlink:href="../images/sprite.svg#arrow-right" width="33" height="15"></use>
+                     <use xlink:href="images/sprite.svg#arrow-right" width="33" height="15"></use>
                   </svg>
                </button>
             </form>
@@ -231,22 +237,22 @@
             <ul class="footer__payment">
                <li class="footer__payment-item">
                   <svg class="footer__paypal-svg">
-                     <use xlink:href="../images/sprite.svg#paypal" width="51" height="51"></use>
+                     <use xlink:href="images/sprite.svg#paypal" width="51" height="51"></use>
                   </svg>
                </li>
                <li class="footer__payment-item">
                   <svg class="footer__mastercard-svg">
-                     <use xlink:href="../images/sprite.svg#mastercard" width="49" height="49"></use>
+                     <use xlink:href="images/sprite.svg#mastercard" width="49" height="49"></use>
                   </svg>
                </li>
                <li class="footer__payment-item">
                   <svg class="footer__visa-svg">
-                     <use xlink:href="../images/sprite.svg#visa" width="48" height="48"></use>
+                     <use xlink:href="images/sprite.svg#visa" width="48" height="48"></use>
                   </svg>
                </li>
                <li class="footer__payment-item">
                   <svg class="footer__bank-svg">
-                     <use xlink:href="../images/sprite.svg#bank-transfer" width="32" height="32"></use>
+                     <use xlink:href="images/sprite.svg#bank-transfer" width="32" height="32"></use>
                   </svg>
                </li>
             </ul>

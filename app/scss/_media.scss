@@ -322,6 +322,9 @@
          flex-wrap: wrap;
          justify-content: center;
          row-gap: 20px;
+         label{
+            width: 100%;
+         }
       }
       &__input-name{
          width: 100%;
@@ -706,8 +709,6 @@
          margin-bottom: 30px;
       }
       &__label-name{
-         flex-wrap: wrap;
-         justify-content: center;
          row-gap: 20px;
       }
       &__input-name{

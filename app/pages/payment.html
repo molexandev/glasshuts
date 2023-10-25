@@ -11,10 +11,10 @@
                      <input class="payment__input" type="text" placeholder="Last Name">
                      <input class="payment__input" type="email" placeholder="Email">
                      <div class="payment__select-box">
-                        <select class="payment__select-flag" name="country" id="">
-                           <option class="payment__select-option payment__select-option1"></option>
-                           <option class="payment__select-option payment__select-option2"></option>
-                           <option class="payment__select-option payment__select-option3"></option>
+                        <select class="payment__select-flag" name="country">
+                           <option class="payment__select-option payment__select-option1">.</option>
+                           <option class="payment__select-option payment__select-option2">.</option>
+                           <option class="payment__select-option payment__select-option3">.</option>
                         </select>
                         <input class="payment__input" type="text" id="phone-number" placeholder="Phone number">
                      </div>
@@ -28,16 +28,16 @@
                   <h3 class="payment__form-title payment__form-title-icons"><span>Pay with</span>
                      <div class="payment__icons-box">
                         <svg class="payment__icon-svg">
-                           <use xlink:href="../images/sprite.svg#pay-pal-payment" width="36" height="36"></use>
+                           <use xlink:href="images/sprite.svg#pay-pal-payment" width="36" height="36"></use>
                         </svg>
                         <svg class="payment__icon-svg">
-                           <use xlink:href="../images/sprite.svg#mastercard-payment" width="35" height="35"></use>
+                           <use xlink:href="images/sprite.svg#mastercard-payment" width="35" height="35"></use>
                         </svg>
                         <svg class="payment__icon-svg">
-                           <use xlink:href="../images/sprite.svg#visa-payment" width="35" height="35"></use>
+                           <use xlink:href="images/sprite.svg#visa-payment" width="35" height="35"></use>
                         </svg>
                         <svg class="payment__icon-svg">
-                           <use xlink:href="../images/sprite.svg#bank-transfer-payment" width="35" height="35"></use>
+                           <use xlink:href="images/sprite.svg#bank-transfer-payment" width="35" height="35"></use>
                         </svg>
                      </div>
                   </h3>
@@ -61,10 +61,10 @@
                            onchange="fun1()">
                         <div class="payment__input-checkbox-svg">
                            <svg class="payment__icon-checked-svg">
-                              <use xlink:href="../images/sprite.svg#booking-checked-svg" width="35" height="35"></use>
+                              <use xlink:href="images/sprite.svg#booking-checked-svg" width="35" height="35"></use>
                            </svg>
                            <svg class="payment__icon-unchecked-svg">
-                              <use xlink:href="../images/sprite.svg#booking-unchecked-svg" width="35" height="35"></use>
+                              <use xlink:href="images/sprite.svg#booking-unchecked-svg" width="35" height="35"></use>
                            </svg>
                         </div>
                         <span>I have read and accept</span>
@@ -80,17 +80,17 @@
                   <span class="services-aside__price-deskr">/ night</span>
                </div>
                <form action="#" class="services-aside__form">
-                  <label class="services-aside__label" for="calender">
+                  <label class="services-aside__label" for="airdatepicker3">
                      <div class="services-aside__name">Check in</div>
                      <input type="text" id="airdatepicker3" placeholder="01.01.2024" readonly>
                   </label>
-                  <label class="services-aside__label" for="calender">
+                  <label class="services-aside__label" for="airdatepicker4">
                      <div class="services-aside__name">Check out</div>
                      <input type="text" id="airdatepicker4" placeholder="01.01.2024" readonly>
                   </label>
-                  <label class="services-aside__label" for="#">
+                  <label class="services-aside__label" for="guests">
                      <div class="services-aside__name">Guests</div>
-                     <input type="number" min="1" max="21" value="1" class="services-aside__inp-number" readonly>
+                     <input class="services-aside__inp-number" id="guests" type="number" min="1" max="21" value="1" readonly>
                   </label>
                </form>
                <div class="services-aside__resume">

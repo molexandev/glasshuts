@@ -110,13 +110,19 @@
             </div>
             <div class="about-form__feedback">
                <form action="#" class="about-form__form">
-                  <label for="name" class="about-form__label-name">
-                     <input type="text" class="about-form__input-name" placeholder="First Name">
-                     <input type="text" class="about-form__input-name" placeholder="Last Name">
+                  <div class="about-form__label-name">
+                     <label for="name-inp1">
+                        <input class="about-form__input-name" id="name-inp1" type="text" placeholder="First Name">
+                     </label>
+                     <label for="name-inp2">
+                        <input class="about-form__input-name" id="name-inp2" type="text" placeholder="Last Name">
+                     </label>
+                  </div>
+                  <label for="info1" class="about-form__label-info">
+                     <input class="about-form__input-info" id="info1" type="email" placeholder="Email">
                   </label>
-                  <label for="info" class="about-form__label-info">
-                     <input type="email" class="about-form__input-info" placeholder="Email">
-                     <input type="text" class="about-form__input-info" placeholder="Subject">
+                  <label for="info2" class="about-form__label-info">
+                     <input class="about-form__input-info" id="info2" type="text" placeholder="Subject">
                   </label>
                   <textarea class="about-form__textarea" placeholder="Message"></textarea>
                </form>
@@ -127,7 +133,7 @@
             <p class="about-form__fromdenemark-text">From Denmark, With love...</p>
             <div class="about-form__fromdenemark-icon-box">
                <svg class="about-form__fromdenemark-icon">
-                  <use xlink:href="../images/sprite.svg#heart-about" width="35" height="35"></use>
+                  <use xlink:href="images/sprite.svg#heart-about" width="35" height="35"></use>
                </svg>
             </div>
          </div>
